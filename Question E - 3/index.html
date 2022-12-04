@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+    <title>Simple Login Page</title>
+
+    <style>
+
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #E1FFEE;
+            font: 15px "Josefin Sans", sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;
+            font-size: 1.2rem;
+        }
+        input[type=text], input[type = password]{
+            font-size: 1.2rem;
+            border-radius: 10px;
+            width: 100%;; 
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 0;
+            border-bottom: 1px, solid;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        button{
+            color: white;
+            background-color: rgb(40, 39, 39);
+            font-family: inherit;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 10px;
+        }
+        .flex-container:before{
+            font-size: larger;
+            text-align: right;
+            display: inline-block;
+            content: "\00d7"; /* This will render the 'X' */
+        }
+
+        .flex-container{
+            font-size:  1.2rem;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 10em;
+            width: 25em;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #7FBCD2;
+        }
+
+        .flex-container > div{
+            font-size: smaller;
+            margin: auto;
+            padding: 10px;
+        }
+
+        p{
+            font-size: small;
+            margin-top: 0;
+            text-align: right;
+        }
+
+        img{
+            width: 30%;
+        }
+        .profile-pic{
+            text-align: center;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-top: 0;
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class = "flex-container">
+        <div>
+            <div class = "profile-pic"><img src="https://i.postimg.cc/hPfrJHTc/vecteezy-profile-user-icon-isolated-on-white-background-vector-eps10-modified.png" alt=""></div>
+            <input type="text" placeholder="Enter Username" required>
+            <input type="password" placeholder="Enter Password" required>
+            <p>Forget Password?</p>
+        <div>
+            <button type="submit"> Login </button>
+        </div>
+    </div>
+</body>
+</html>

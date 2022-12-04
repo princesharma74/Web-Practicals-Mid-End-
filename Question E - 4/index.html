@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+    <title>Question 4 - Tricolor </title>
+</head>
+
+<style>
+    body{
+        background-color:azure;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 100px auto;
+    }
+
+    .indian_flag{
+        margin: 150px auto;
+        height: 400px;
+        width: 600px;
+    }
+
+    .indian_flag > div{
+        height: 33%;
+    }
+
+
+    .indian_flag > div:hover{
+        transform: scale(1.01);
+        transition: 0.5s;
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    }
+    .saffron{
+        background-color: orange;
+    }
+
+    .green{
+        background-color: green;
+    }
+
+    .white{
+        background-color: white;
+        text-align: center;
+    }
+
+    #ashoka-chakra{
+        position: relative;
+        height: 100%;
+        margin-top: -100%;
+        top: -12px;
+    }
+
+    #ashoka-chakra:hover{
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+
+    a.fill-div{
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    h1{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="indian_flag">
+    <h1>Indian Flag</h1>
+        <div class="saffron"><a href="saffron.html" class="fill-div"></a></div>
+        <div class="white">
+            <a href="white.html" class="fill-div">
+            </a>
+            <a href="ashoka.html"><img id="ashoka-chakra" src="ashoka-chakra.png" alt=""></a>
+        </div>
+        <div class="green"><a href="green.html" class="fill-div"></a></div>
+    </div>
+</body>
+</html>
